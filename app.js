@@ -46,6 +46,13 @@ drawButton.addEventListener('click', e => {
     highButton.classList.remove('hidden')
     lowButton.classList.remove('hidden')
     card2.classList.add('hidden')
+    h1.textContent = 'High or Low'
+    h1.style.color = 'black'
+  })
+  .catch(error => {
+    drawButton.classList.add('hidden')
+    h1.textContent = 'Shuffle a new deck'
+    h1.style.color = 'black'
   })
 })
 
